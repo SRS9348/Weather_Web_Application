@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Dashboard</h1>
+        </header>
+        <main>
+            <div class="search-box">
+                <input type="text" id="locationInput" placeholder="Search for a city" style="font-size: 18px; padding: 12px;">
+                <button id="searchBtn" style="font-size: 18px; padding: 12px 24px;">Go</button>
+            </div>
+            <div class="weather-info hidden" style="background-color: #f0f8ff; padding: 30px; border-radius: 20px; margin-top: 20px;">
+                <h2 id="locationName" style="font-size: 28px; color: #2a2a72;">City Name</h2>
+                <p id="temperature" style="font-size: 24px; color: #1e90ff;">Temperature: --°C</p>
+                <p id="condition" style="font-size: 22px; color: #ff6347;">Condition: --</p>
+                <p id="humidity" style="font-size: 20px; color: #20b2aa;">Humidity: --%</p>
+                <p id="wind" style="font-size: 20px; color: #4682b4;">Wind Speed: -- m/s</p>
+            </div>
+        </main>
+        <footer style="margin-top: 40px;">
+            <p style="font-size: 14px; color: #696969;">Powered by OpenWeatherMap</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
